@@ -6,8 +6,6 @@ TBD. Something about SRE team in different timezones.
 
 ## Timeline
 
-**Timezone**: CET
-
 | Date & Time in CET | Event                                                                                                                                                                      |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2019-11-29 12:00   | Proactively scaling up Hellman Kubernetes cluster from 7 to 10 nodes, to ensure sufficient capacity for team migrations                                                    |
