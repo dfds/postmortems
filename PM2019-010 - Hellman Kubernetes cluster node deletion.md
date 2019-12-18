@@ -8,16 +8,17 @@ A lack of Priority-classes and the IP starvation issue in the cluster resulted i
 
 ## Timeline
 
-All times in CET.
+**Date**: 2019-12-04
+**Timezone**: CET
 
 | Time | Event |
-| :--- | --- |
-| 2019-12-04 00:30 | Accidental execution of command that deleted all worker nodes in Hellman Kubernetes cluster, resulting in workloads being unschedulable |
-| 2019-12-04 00:35 | Manually marked VMs as unhealthy, triggering automatic provisioning of new instances to join the Kubernetes cluster |
-| 2019-12-04 01:00 | Verified that new nodes joined cluster and most deployments are up and running again |
-| 2019-12-04 01:05 | Some critical daemonsets (i.e. KIAM) not operational, due to IP address starvation these workloads could not be scheduled on all nodes as they should be (see separate post-mortem) |
-| 2019-12-04 01:15 | Applying built-in priority-classes to schedule critical components before other workload, ensuring operations of critical workloads |
-| 2019-12-04 01:30 | Verified all systems operational |
+| :---: | --- |
+| 00:30 | Accidental execution of command that deleted all worker nodes in Hellman Kubernetes cluster, resulting in workloads being unschedulable |
+| 00:35 | Manually marked VMs as unhealthy, triggering automatic provisioning of new instances to join the Kubernetes cluster |
+| 01:00 | Verified that new nodes joined cluster and most deployments are up and running again |
+| 01:05 | Some critical daemonsets (i.e. KIAM) not operational, due to IP address starvation these workloads could not be scheduled on all nodes as they should be (see separate post-mortem) |
+| 01:15 | Applying built-in priority-classes to schedule critical components before other workload, ensuring operations of critical workloads |
+| 01:30 | Verified all systems operational |
 
 ## Contributing Factors
 
