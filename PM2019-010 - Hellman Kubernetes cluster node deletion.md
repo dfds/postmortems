@@ -9,7 +9,7 @@ A lack of Priority-classes and the IP starvation issue in the cluster resulted i
 ## Timeline
 
 | Date and Time in CET | Event                                                                                                                                                                                               |
-|:--------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   2019-12-04 00:30   | Accidental execution of command that deleted all worker nodes in Hellman Kubernetes cluster, resulting in workloads being unschedulable                                                             |
 |   2019-12-04 00:35   | Manually marked VMs as unhealthy, triggering automatic provisioning of new instances to join the Kubernetes cluster                                                                                 |
 |   2019-12-04 01:00   | Verified that new nodes joined cluster and most deployments are up and running again                                                                                                                |
@@ -37,4 +37,4 @@ While re-provisioning the nodes in the cluster, a previously unfelt issue arose 
 
 - **Implement priority-classes for critical workloads**: Has been scheduled as part of our effort to improve resilience in the cluster and ensuring that resource restrictions does not create potential for a node missing a critical component.
 
-[PM2019-009]: https://github.com/dfds/postmortems/blob/master/PM2019-009%20-%20Kubernetes%20network%20infrastructure%20IP%20starvation.md
+[PM2019-009]: PM2019-009%20-%20Kubernetes%20network%20infrastructure%20IP%20starvation.md
