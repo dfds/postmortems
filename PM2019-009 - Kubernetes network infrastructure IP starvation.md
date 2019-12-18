@@ -8,7 +8,7 @@ TBD. Something about SRE team in different timezones.
 
 All times in CET.
 
-| Time &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Event |
+| Time  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Event |
 | ----------------- | --- |
 | 2019-11-29 12:00+ | Proactively scaling up Hellman Kubernetes cluster from 7 to 10 nodes, to ensure sufficient capacity for team migrations |
 | 2019-11-30 08:24 | Automated warning from AWS, that the load balancer for Hellman Kubernetes ingress, were "unable to scale up because there are not enough free IP addresses in its subnets" |
