@@ -8,8 +8,8 @@ A lack of Priority-classes and the IP starvation issue in the cluster resulted i
 
 ## Timeline
 
-**Date**: 2019-12-04
-**Timezone**: CET
+**Date**: 2019-12-04  
+**Timezone**: CET  
 
 | Time | Event |
 | :---: | --- |
