@@ -2,7 +2,7 @@
 
 ## Summary
 
-On Friday 29 November 2019, we proactively scaled the amounts of worker nodes in the cluster to increase capacity of deployments could be scheduling in anticipation of teams migrating from our old Prod and NonProd clusters to the new Hellman cluster. This increase would turn out to push the network architecture and design of our cluster to the limit.
+On Friday 29 November 2019, we proactively scaled the amounts of worker nodes in the cluster to increase capacity of possible deployments to be scheduled, in anticipation of teams migrating from our old Prod and NonProd clusters to the new Hellman cluster. This increase would turn out to push the network architecture and design of our cluster to the limit.
 
 **The underlying issue**:  
 A quick TL;DR of the underlying technical issue.
