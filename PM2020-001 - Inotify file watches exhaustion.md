@@ -15,7 +15,7 @@ All times in CET.
 | Time             | Event                                           |
 | :--------------- | ----------------------------------------------- |
 | 2020-01-20 13:50 | Node starts reporting "no space left on device" |
-| 2020-01-22 10:39 | Pod killed                                      |
+| 2020-01-22 10:39 | Pod killed, releasing file watches              |
 
 ## Contributing Factors
 
