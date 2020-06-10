@@ -2,7 +2,7 @@
 
 ## Summary
 
-On Tuesday 9th of June 2020, a planned maintenance for the Hellman Kubernetes cluster related to seperate auto-scaling groups per availability zone caused the ALB's (AWS Application LoadBalancer), both the authenticated and not authenticated one, to remove all attached instance i.e. Kubernetes worker nodes. This caused all services running inside the cluster to become unavailable.
+On Tuesday 9th of June 2020, a planned maintenance for the Hellman Kubernetes cluster related to seperate auto-scaling groups per availability zone caused the ALB's (AWS Application LoadBalancer), both the authenticated and not authenticated one, to remove all attached instance i.e. Kubernetes worker nodes. This caused all services running inside the cluster to become unavailable from outside the cluster.
 
 When alerted, the SRE team quickly found the root cause and applied a quick fix, by manually attaching the instances to the ALB's. Afterwards a permanent fix was implemented within the hour.
 
