@@ -1,4 +1,4 @@
-# Incident Title
+# ADSync service accounts
 
 ## Summary
 
@@ -14,7 +14,6 @@ All times in CET.
 
 | Time | Event |
 | :--- | --- |
-
 | 2020-02-24 10:50 | Identified problem with ADSync assuming roles for certain capabilities.  |
 | 2020-02-24 10:50 | Identified problem with ADSync not overwriting parameters in AWS ParameterStore.  |
 | 2020-03-03 10:00 | Decided to not patch existing service accounts to avoid breaking capabilities that was already using the feature.  |
