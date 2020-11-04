@@ -20,14 +20,15 @@ All times in CET.
 
 - Doing a workshop using production as sandbox
 - Smoketesting not in place to catch breaking capabilities
-- Knowledge of Alcide wasn't distributed among team members
+- Knowledge of Alcide wasn't distributed among team members because of pending deprecation
 - False safety with "re-applying" something that had already been there
 
 ## Lessons Learned
 
 - New stuff is applied in sandbox clusters
-- Distrube specialized knowledge a
+- Acquire Alcide knowledge required to maintain component until fully deprecated
 
 ## Action Items
 
--
+- Monitor Kubernetes deployments for timeouts
+- Monitor 5xx status codes for Kube API server
