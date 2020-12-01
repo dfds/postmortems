@@ -2,7 +2,7 @@
 
 ## Summary
 
-On 17. November, KIAM on Hellman was upgraded from 3.5 to 3.6, by applying a new version (`5.10.0`) of its _Helm chart_ - the manifest used to deploy the application and the Kubernetes resources it depends on. KIAM is the glue that enables Kubernetes workloads to authenticate transparently against AWS resources.
+On 17. November, KIAM on Hellman was upgraded from 3.5 to 3.6, by applying a new version (`5.10.0`) of its _Helm chart_ - the manifest used to deploy the application and the Kubernetes resources it depends on. KIAM is the glue that enables Kubernetes workloads to authenticate transparently against AWS resources, such as connection database backends, S3 buckets etc.
 
 The new Helm chart used [more inclusive naming][kiam-pr], changing one of the KIAM argument names from `WhitelistRouteRegexp` to `AllowRouteRegexp`. This means part of our configuration, necessary to support AWS PowerShell cmdlets, was now being ignored.
 
