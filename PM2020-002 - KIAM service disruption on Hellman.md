@@ -34,3 +34,9 @@ Furthermore, when a deployment depends on non-trivial processes, these need to b
 - Document the process of creating/updating KIAM certificates
 - We have added a backlog task to curate for which scenarios we want to receive alerts
 - Replace KIAM server with "EKS Service IAM Role"
+
+# Stats
+
+- Category: Kubernetes
+- Time to detection: 54 minutes
+- Time to recovery: 148 minutes

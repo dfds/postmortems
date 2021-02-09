@@ -39,3 +39,9 @@ All times in CET.
 - We need to streamline our pipelines so they become more generic and less application centric.
 - All applications should run in containers. Configuring your application hosting environment via inline powershell code or referencing scripts in your repo to setup build agents is bound to fail.
 - We need to refactor NUnit -> XUnit test so we can use the CLI-based test runner and don't have to rely on the VSTest job as it binds us to windows agents.
+
+# Stats
+
+- Category: Self-service
+- Time to detection: ?
+- Time to recovery: ?

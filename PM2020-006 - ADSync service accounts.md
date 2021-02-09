@@ -38,3 +38,9 @@ All times in CET.
 - DevEX will update all service accounts in the near future by synchronizing all passwords from the AWS ParameterStore to our on-prem AD. We will post a maintenance notice ahead-of-time and reach out to people whose pipelines are affected by the patch to ensure you are not unprepared for this event.
 
 - DevEx has placed an action item on our development roadmap to implement a new ADSync provider in the near future. This will have the added benefit of event enabling the ADSync service which would allow teams to listen in to various events that can affect their service accounts.
+
+# Stats
+
+- Category: Self-service
+- Time to detection: ?
+- Time to recovery: ?

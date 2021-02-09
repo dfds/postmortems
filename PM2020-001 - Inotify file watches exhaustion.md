@@ -30,3 +30,9 @@ If this turns out to be a recurring issue, we may want to spent some time to res
 ## Action Items
 
 - Setup monitoring and alerting for file watches usage
+
+# Stats
+
+- Category: Self-service
+- Time to detection: ?
+- Time to recovery: ?

@@ -32,3 +32,9 @@ All times in CET.
 
 - Monitor Kubernetes deployments for timeouts
 - Monitor 5xx status codes for Kube API server
+
+# Stats
+
+- Category: Kubernetes
+- Time to detection: 88 minutes
+- Time to recovery: 122 minutes

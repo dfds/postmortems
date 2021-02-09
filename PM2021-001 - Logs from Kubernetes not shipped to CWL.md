@@ -37,3 +37,9 @@ When creating dashboards, think about what represents abnormal behaviour and cre
 - Setup alerts for when logs are not shipped to CWL - consider monitoring both receiving and sending part (issue created)
 - Discuss the feasibility of using GitOps for essential cluster workloads (Rasmus call for meeting)
 - Discuss modularity of our `infrastructure-modules` Terraform repo (Willi call for meeting)
+
+## Stats
+
+- Category: Observability
+- Time to detection: 1415 minutes
+- Time to recovery: 1435 minutes

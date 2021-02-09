@@ -17,7 +17,6 @@ All times in CET.
 | 2020-06-09 12:25 | CloudWatch alert detects high count of 5XX for the ALB's |
 | 2020-06-09 12:28 | Issue with no ingress traffic detected and verified |
 | 2020-06-09 12:35 | Issue mitigated with manual attaching instances to ALB's |
-| 2020-06-09 12:35 | Issue mitigated with manual attaching instances to ALB's |
 | 2020-06-09 13:13 | Issue resolved and permanently fixed |
 
 ## Contributing Factors
@@ -40,3 +39,9 @@ All times in CET.
 - Implement alerts for ALB healthy/unhealthy targets. This would give a more precise and more instant notice
 - Bring down alert noise even more
 - Implement resolve host name for Goldpinger
+
+# Stats
+
+- Category: Kubernetes
+- Time to detection: 5 minutes
+- Time to recovery: 15 minutes

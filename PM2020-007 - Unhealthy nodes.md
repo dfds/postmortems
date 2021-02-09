@@ -41,3 +41,9 @@ We recorded the facts so we can revisit the issue, because we didn't learn that 
 
 - Create a query/dashboard/alarm detecting pod restarts grouped by node.
 - Prioritize upgrading our kubernetes prometheus stack.
+
+# Stats
+
+- Category: Kubernetes
+- Time to detection: 60 minutes
+- Time to recovery: 240 minutes

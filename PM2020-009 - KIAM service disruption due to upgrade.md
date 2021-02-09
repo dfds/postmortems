@@ -38,3 +38,11 @@ All times in CET.
   - See https://github.com/uswitch/kiam/blob/master/docs/METRICS.md.
 
 [kiam-pr]: https://github.com/uswitch/kiam/pull/427
+
+# Stats
+
+- Category: Kubernetes
+- Time to detection: 0 minutes
+- Time to recovery: 30 minutes
+
+Notes: The stats above is for when we had a full KIAM outage.

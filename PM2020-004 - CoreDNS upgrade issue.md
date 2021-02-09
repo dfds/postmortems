@@ -35,3 +35,9 @@ All times in CET.
 
 - Action plan for checking release notes from both source and vendor in case of upgrading components / add-ons
 - We need monitoring of core services with direct health checks / metrics on these services instead of monitoring them by proxy checks/metrics
+
+# Stats
+
+- Category: Kubernetes
+- Time to detection: ?
+- Time to recovery: 31 minutes
