@@ -2,7 +2,6 @@
 
 ## Summary
 
-
 ## Timeline
 
 All times in CET.
@@ -21,3 +20,9 @@ All times in CET.
 ## Action Items
 
 - 
+
+## Stats
+
+- Category: XXX
+- Time to detection: YYY
+- Time to recovery: ZZZ
