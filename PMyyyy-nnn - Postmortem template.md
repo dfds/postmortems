@@ -26,3 +26,7 @@ All times in CET.
 - Category: XXX
 - Time to detection: YYY
 - Time to recovery: ZZZ
+
+## Staff present
+
+- Someone Fromtheteam
