@@ -21,12 +21,12 @@ All times in CET.
 
 - 
 
+## Atendees
+
+- Someone Fromtheteam (use initials)
+
 ## Stats
 
 - Category: XXX
 - Time to detection: YYY
 - Time to recovery: ZZZ
-
-## Staff present
-
-- Someone Fromtheteam
