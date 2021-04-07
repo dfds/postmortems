@@ -1,6 +1,4 @@
-# Incident Title
-
-ADFS Outage
+# ADFS Outage
 
 ## Summary
 
