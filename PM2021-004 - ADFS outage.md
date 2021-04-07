@@ -37,6 +37,7 @@ All times in UTC.
 
 - Implement monitoring of ADFS (particularly certificate expiry via script or even calendar)
 - Identify a clear path for migration away from ADFS to alternative solution
+- Ask datacenters to apply monitoring and follow up
 
 ## Atendees
 
