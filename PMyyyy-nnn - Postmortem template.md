@@ -4,7 +4,7 @@
 
 ## Timeline
 
-All times in CET.
+All times in UTC.
 
 | Time | Event |
 | :--- | --- |
