@@ -6,22 +6,23 @@
 
 All times in UTC.
 
-| Time | Event |
-| :--- | --- |
-| 20xx-MM-DD HH:mm | Short event description | 
+| Time             | Event                   |
+| :--------------- | ----------------------- |
+| 20xx-MM-DD HH:mm | Short event description |
 
 ## Contributing Factors
 
-- 
-
-## Lessons Learned
-
+-
 
 ## Action Items
 
-- 
+-
 
-## Atendees
+## Lessons Learned
+
+-
+
+## Attendees
 
 - Someone Fromtheteam (use initials)
 
