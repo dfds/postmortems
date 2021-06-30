@@ -10,12 +10,13 @@ A poor release strategy meant that a change which would have mitigated the issue
 
 All times in UTC.
 
-| Time             | Event                                           |
-| :--------------- | ----------------------------------------------- |
-| 2021-06-30 08:32 | Kubernetes upgrade commenced                    |
-| 2021-06-30 09:59 | Infrastructure Modules release 0.2.119          |
-| 2021-06-30 10:00 | Status 503 messages witnessed for a second time |
-| 2021-06-30 10:04 | Target group manually reattached to ALB's       |
+| Time             | Event                                                                                                    |
+| :--------------- | -------------------------------------------------------------------------------------------------------- |
+| 2021-06-30 08:32 | Kubernetes upgrade commenced                                                                             |
+| 2021-06-30 09:59 | Infrastructure Modules release 0.2.119                                                                   |
+| 2021-06-30 10:00 | Status 503 messages witnessed for a second time                                                          |
+| 2021-06-30 10:04 | Target group manually reattached to ALB's (resolved)                                                     |
+| 2021-06-30 10:26 | Infrastructure Modules release 0.2.220 contains fix that sets a deregistration timeout on target groups. |
 
 ## Contributing Factors
 
