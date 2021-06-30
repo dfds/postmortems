@@ -24,7 +24,8 @@ All times in UTC.
 
 ## Action Items
 
-- Arrange meeting to discuss release strategy an possible areas of improvement.
+- Agree on a sustainable way to release both planned features and hotfixes from master.
+- Clear communication if merges breaks the master branch ability to release hotfixes.
 - Ensure that alerting in our sandbox clusters is configured to broadcast alerts to a test Slack channel so it aligns more with what we see in Production.
 
 ## Lessons Learned
