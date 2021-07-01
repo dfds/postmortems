@@ -12,15 +12,16 @@ All times in UTC.
 
 | Time             | Event                                                                                                    |
 | :--------------- | -------------------------------------------------------------------------------------------------------- |
-| 2021-06-30 08:32 | Kubernetes upgrade commenced                                                                             |
-| 2021-06-30 09:59 | Infrastructure Modules release 0.2.119                                                                   |
-| 2021-06-30 10:00 | Status 503 messages witnessed for a second time                                                          |
-| 2021-06-30 10:04 | Target group manually reattached to ALB's (resolved)                                                     |
+| 2021-06-30 08:32 | Kubernetes upgrade commenced.                                                                            |
+| 2021-06-30 09:59 | Infrastructure Modules release 0.2.119.                                                                  |
+| 2021-06-30 10:00 | Status 503 messages witnessed.                                                         |
+| 2021-06-30 10:04 | Target group manually reattached to ALB's (resolved).                                                    |
 | 2021-06-30 10:26 | Infrastructure Modules release 0.2.220 contains fix that sets a deregistration timeout on target groups. |
 
 ## Contributing Factors
 
-- Poor release strategy/lack of coordination
+- Release strategy and communication around releases that stay long in the pipeline has room for improvement.
+- We had seen this issue before, and knew the fix for it, but the hotfix had not been applied to the cluster.
 
 ## Action Items
 
@@ -30,7 +31,7 @@ All times in UTC.
 
 ## Lessons Learned
 
--
+- Quickly address the actions in postmortems (since the same issue was covered in the previous postmortem).
 
 ## Attendees
 
@@ -39,5 +40,5 @@ All times in UTC.
 ## Stats
 
 - Category: Kubernetes
-- Time to detection: 2 minutes
-- Time to recovery:  3 minutes
+- Time to detection: 1 minutes
+- Time to recovery:  5 minutes
