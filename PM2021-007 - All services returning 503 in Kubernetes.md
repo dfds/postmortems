@@ -8,7 +8,7 @@ and coincided with our daily scheduled execution of the EKS pipeline. However, i
 Investigations showed that the issue had started on June 15, and this coincided with an update to the Terraform AWS provider used. The provider behavior changed,
 and this led to tearing down the association between the load balancer and the target groups. Later in the pipeline run, the association was re-established, but in the interim period status 503 messages was being thrown.
 
-The solution was to change the lifecycle management of how the AWS Autoscaling Group is managed.
+The solution was to change the lifecycle management of how the AWS Autoscaling Group is managed. We will keep a close eye on the next few pipeline runs, and manually and repeatedly monitor service availability.
 
 ## Timeline
 
