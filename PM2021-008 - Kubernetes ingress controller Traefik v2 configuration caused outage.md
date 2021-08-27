@@ -2,7 +2,7 @@
 
 ## Summary
 
-As part of the migration away from Kubernetes ingress controller Traefik v1, we changed the main Kubernetes ingress controller to v2 of Traefik. Due to misconfiguration which didn't allow insecure headers ("X-FORWARDED-*"), to be forwarded causing at least the Okta authentication workflow to go down. This meant that all services using Okta got affected. Changes were rolled back and started working again.
+As part of the migration away from Kubernetes ingress controller Traefik v1, we changed the main Kubernetes ingress controller to v2 of Traefik. A misconfiguration didn't allow insecure headers ("X-FORWARDED-") to be forwarded causing the Okta authentication workflow to break. This meant that all services using Okta got affected. Changes were rolled back and started working again.
 
 ## Timeline
 
@@ -44,4 +44,4 @@ All times in UTC.
 
 - Category: Kubernetes
 - Time to detection: 64 minutes
-- Time to recovery:  23 minutes
+- Time to recovery:  87 minutes
