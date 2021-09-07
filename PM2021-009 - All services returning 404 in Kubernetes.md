@@ -38,6 +38,14 @@ All times in UTC.
 - Look into monitoring the Traefik v2 API for rapid changes
 - Look into smoketesting, during and after node rollover
 
+## Lessons Learned
+
+- Appointing an incident manager could have helped
+- Record war room meeting
+- Only written suggestions allowed from people not involved
+- Keep log book
+- Have a short initial round sharing thought, gut feelings etc.
+
 ## Attendees
 
 - RR, EC, PW, WC
