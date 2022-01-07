@@ -72,7 +72,7 @@ All times in UTC.
 - We need a better way to quickly switch between IAM accounts when doing investigations across accounts
 - (Process/Structure) No formal definition of a team which creates communication friction
 - (Process/Structure) CE did a lot of scanning. We also manually upgraded a few affected ElasticSearch instances. The latter could have be done by the teams themselves. We did it to speed up the process
-- Only 1 team reacted proactively to the vulnerability. The underlying cause for why the other teams
+- Only 1 team reacted proactively to the vulnerability
 - Some teams were using old infrastructure components. Examples: EC2, ElasticSearch
 - One capability was no longer used, but still had resources on AWS and on Hellman
 - We were not using AWS Inspector to scan EC2 and ECR
