@@ -55,7 +55,7 @@ All times in UTC.
   - Initial coordination unstructured but rapidly improved
   - Shared board worked well to get an overview although there was little cross-group assistance
   - Mitigation information sharing was unstructured. Some suggestions mentioned in full group video meetings but not written down, others in DMs between individuals.
-- Difficult to get the message out ot developers about how serious this was
+- Difficult to get the message out to developers about how serious this was
   - No clear communication channel to developers and PO's
   - Initial Friday post on Teams easily missed but in theory readable by all of T&I. Also posted out of office hours
   - Follow-up message on Slack posted in channel with 160-170 members only. 6 people acknowledged seeing it
