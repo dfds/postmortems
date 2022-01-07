@@ -46,6 +46,7 @@ All times in UTC.
 - Figure out how to monitor the critical CVEs
 - Automatic process to detect CVE in products and be notified when the CVE database is updated
 - Setup an automated inventory system for AWS resources (for example <https://github.com/darkbitio/aws-recon>)
+- Create a process for identifying the missing capability owners.
 
 ## Lessons Learned
 
