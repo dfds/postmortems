@@ -10,34 +10,34 @@ CVE details: <https://nvd.nist.gov/vuln/detail/CVE-2021-44228>
 
 All times in UTC.
 
-| Time               | Event                                                                                                                                                                  |
-| :----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2021-12-10         | The Log4Shell vulnerability was published                                                                                                                              |
-| 2021-12-10   15:40 | We became aware of it during a call with Peter Taylor                                                                                                                  |
-| 2021-12-10   16:10 | IT-Security published messaged on MS Teams and Slack about it                                                                                                          |
-| 2021-12-10   16:10 | Azure DevOps git repositories were searched for usage of Log4J                                                                                                         |
-| 2021-12-10   19:00 | People in CE was discussing internally about Log4J, and decided to advice S&amp;O                                                                                      |
-| 2021-12-13   09:15 | Started investigating DFDS' usage of ElasticSearch/OpenSearch on AWS                                                                                                   |
-| 2021-12-13   11:45 | Jan and John discussing a collaboration with S&amp;O                                                                                                                   |
-| 2021-12-13   15:50 | Started scanning Docker images used on Hellman. One affected pod found (xroute)                                                                                        |
-| 2021-12-13   14:30 | Initial management-level contact with S&amp;O                                                                                                                          |
-| 2021-12-13   16:29 | (Lloyd Middleton) Common task coordination board created                                                                                                               |
-| 2021-12-14   09:15 | Scanning all images in ECRs not covered by the first Docker layer scan                                                                                                 |
-| 2021-12-14   10:50 | Formal notification to EA group                                                                                                                                        |
-| 2021-12-14   11:11 | Communication with the architects started                                                                                                                              |
-| 2021-12-14   11:30 | (T&amp;I level) Initial meeting of all direct involved and incident manager (Søren Iversen) appointed                                                                  |
-| 2021-12-16   14:00 | Scanning EC2 instances started                                                                                                                                         |
-| 2021-12-16   16:14 | Update requested on cloud infrastructure progress                                                                                                                      |
-| 2021-12-16   17:18 | Update on cloud infrastructure progress given to Soren, Lloyd and Peter Taylor                                                                                         |
-| 2021-12-17   12:00 | Four EC2 servers found with critical vulnerabilities, but not related to Log4Shell, teams notified                                                                     |
-| 2021-12-17   12:45 | AWS Lamdas checked. Four Java based Lamdas were found. They were not checked for Log4J. Agreed with developer to delete them since they were just for testing purposes |
-| 2021-12-17   13:00 | AWS Glue checked, and no vulnerabilities found                                                                                                                         |
-| 2021-12-17   14:00 | 2nd call for self-reporting from developers - no responses received                                                                                                    |
-| 2021-12-17   14:40 | Vulnerable EC2 instances terminated, because they were development servers                                                                                             |
-| 2021-12-17         | log4j 2.17 published                                                                                                                                                   |
-| 2021-12-18         | CE evaluated that no action was needed regarding new 2.17 release. Verified that AWS had autopatched where applicable.                                                 |
-| 2021-12-20   09:15 | AWS SageMaker checked, and no vulnerabilities found.                                                                                                                   |
-| 2022-01-04 11:03   | Follow-up on missing feedback from Logistics x-route team. Product was patched and no further action was required.                                                     |
+| Time               | Event                                                                                                                                                                    |
+| :----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2021-12-10         | The Log4Shell vulnerability was published                                                                                                                                |
+| 2021-12-10   15:40 | We became aware of it during a call with Peter Taylor                                                                                                                    |
+| 2021-12-10   16:10 | IT-Security published messaged on MS Teams and Slack about it                                                                                                            |
+| 2021-12-10   16:10 | Azure DevOps git repositories were searched for usage of Log4J                                                                                                           |
+| 2021-12-10   19:00 | People in CE was discussing internally about Log4J, and decided to advice S&amp;O                                                                                        |
+| 2021-12-13   09:15 | Started investigating DFDS' usage of ElasticSearch/OpenSearch on AWS                                                                                                     |
+| 2021-12-13   11:45 | Jan and John discussing a collaboration with S&amp;O                                                                                                                     |
+| 2021-12-13   15:50 | Started scanning Docker images used on Hellman. One affected pod found (xroute)                                                                                          |
+| 2021-12-13   14:30 | Initial management-level contact with S&amp;O                                                                                                                            |
+| 2021-12-13   16:29 | (Lloyd Middleton) Common task coordination board created                                                                                                                 |
+| 2021-12-14   09:15 | Scanning all images in ECRs not covered by the first Docker layer scan                                                                                                   |
+| 2021-12-14   10:50 | Formal notification to EA group                                                                                                                                          |
+| 2021-12-14   11:11 | Communication with the architects started                                                                                                                                |
+| 2021-12-14   11:30 | (T&amp;I level) Initial meeting of all direct involved and incident manager (Søren Iversen) appointed                                                                    |
+| 2021-12-16   14:00 | Scanning EC2 instances started                                                                                                                                           |
+| 2021-12-16   16:14 | Update requested on cloud infrastructure progress                                                                                                                        |
+| 2021-12-16   17:18 | Update on cloud infrastructure progress given to Soren, Lloyd and Peter Taylor                                                                                           |
+| 2021-12-17   12:00 | Four EC2 servers found with critical vulnerabilities, but not related to Log4Shell, teams notified                                                                       |
+| 2021-12-17   12:45 | AWS Lambdas checked. Four Java based Lambdas were found. They were not checked for Log4J. Agreed with developer to delete them since they were just for testing purposes |
+| 2021-12-17   13:00 | AWS Glue checked, and no vulnerabilities found                                                                                                                           |
+| 2021-12-17   14:00 | 2nd call for self-reporting from developers - no responses received                                                                                                      |
+| 2021-12-17   14:40 | Vulnerable EC2 instances terminated, because they were development servers                                                                                               |
+| 2021-12-17         | log4j 2.17 published                                                                                                                                                     |
+| 2021-12-18         | CE evaluated that no action was needed regarding new 2.17 release. Verified that AWS had autopatched where applicable.                                                   |
+| 2021-12-20   09:15 | AWS SageMaker checked, and no vulnerabilities found.                                                                                                                     |
+| 2022-01-04 11:03   | Follow-up on missing feedback from Logistics x-route team. Product was patched and no further action was required.                                                       |
 
 ## Action Items
 
