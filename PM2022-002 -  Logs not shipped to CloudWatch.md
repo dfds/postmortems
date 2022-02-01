@@ -41,5 +41,5 @@ All times in UTC.
 ## Stats
 
 - Category: Kubernetes
-- Time to detection: 53? minutes
+- Time to detection: 53 minutes
 - Time to recovery: 109 minutes
