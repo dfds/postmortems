@@ -39,7 +39,7 @@ All times in UTC.
 
 ## Lessons Learned
 
-- Packages can be highjacked very easy for someone personal gain or Political Views.
+- Packages can be highjacked very easy for someone personal gain or political views.
 - Difficult to verify transitive dependencies.
 - Packages should not always be bumped to the latest version without investigation first.
 - Very difficult to validate packages without a tool.
