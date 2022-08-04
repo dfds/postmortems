@@ -8,18 +8,18 @@ Kafka metrics missing from Prometheus due to kafka-exporter's /metrics endpoint 
 
 All times in UTC.
 
-| Time             | Event                   |
-| :--------------- | ----------------------- |
-| 2022-02-08 12:20 | kafka-exporter's /metrics load time gets greater than Prometheus scrape timeout (10s).  |
-| 2022-02-09 06:16 | Developer asks if Prometheus is up. |
-| 2022-02-09 08:03 | **Discovery:** Developer explains that he sees no Kafka metrics in Grafana. |
-| 2022-02-09 08:27 | We discover that Prometheus consider kafka-exporter down due to the 10s scrape timeout. |
-| 2022-02-09 08:40 | **Recovery:** Prometheus scrape timeout raised to 30 seconds as a quick fix. |
-| 2022-02-09 08:45 | Permanent fix added as Infrastructure as Code. |
-| 2022-02-09 09:08 | Root cause analysis showed that one capability created a large amount of unique Kafka consumergroups. |
+| Time             | Event                                                                                                               |
+| :--------------- | ------------------------------------------------------------------------------------------------------------------- |
+| 2022-02-08 12:20 | kafka-exporter's /metrics load time gets greater than Prometheus scrape timeout (10s).                              |
+| 2022-02-09 06:16 | Developer asks if Prometheus is up.                                                                                 |
+| 2022-02-09 08:03 | **Discovery:** Developer explains that he sees no Kafka metrics in Grafana.                                         |
+| 2022-02-09 08:27 | We discover that Prometheus consider kafka-exporter down due to the 10s scrape timeout.                             |
+| 2022-02-09 08:40 | **Recovery:** Prometheus scrape timeout raised to 30 seconds as a quick fix.                                        |
+| 2022-02-09 08:45 | Permanent fix added as Infrastructure as Code.                                                                      |
+| 2022-02-09 09:08 | Root cause analysis showed that one capability created a large amount of unique Kafka consumergroups.               |
 | 2022-02-09 09:25 | Contacted the capability members about their design choice and its impact. Advised them about alternative solution. |
-| 2022-02-09 13:08 | Upgraded the kafka-exporter to gain minor performance increase.  |
-| 2022-02-?? ??:?? | TBA: Problem will remain until the capability has reworked their consumergroup usage.  |
+| 2022-02-09 13:08 | Upgraded the kafka-exporter to gain minor performance increase.                                                     |
+| 2022-02-?? ??:?? | TBA: Problem will remain until the capability has reworked their consumergroup usage.                               |
 
 ## Contributing Factors
 

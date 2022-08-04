@@ -13,19 +13,19 @@ https://snyk.io/blog/peacenotwar-malicious-npm-node-ipc-package-vulnerability/
 
 All times in UTC.
 
-| Time             | Event                   |
-| :--------------- | ----------------------- |
-| 2022-03-07 00:00 | Vulnerability committed into node package called node-ipc |
-| 2022-03-08 00:00 | Fix committed into node-ipc package |
-| 2022-03-18 08:37 | Emil notified by social media |
-| 2022-03-18 08:39 | Emil notified team via slack |
-| 2022-03-18 08:59 | Audun looked for the packages in the known repositories, both Github and Azure Dev-Ops |
-| 2022-03-18 09:00 | Audun found four effected repositories, two in Azure Dev-Ops, Two in Github |
-| 2022-03-18 09:15 | John evaluated two repositories in Azure Dev-Ops and found one to be production code (MVS UI) with unaffected version and one to be unused code (tech-challenge) |
-| 2022-03-18 09:20 | John removed "tech-challenge" project as it was a POC |
-| 2022-03-18 09:25 | Freight team was notified and educated of the issue |
-| 2022-03-18 10:07 | Audun evaluated two repositories in Github found both repositories able to be archived due to one being sample code (Crossplane-Sandbox) and one not being used (Cost-janitor) |
-| 2022-03-18 10:40 | Ross was assigned for the investigation |
+| Time             | Event                                                                                                                                                                            |
+| :--------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2022-03-07 00:00 | Vulnerability committed into node package called node-ipc                                                                                                                        |
+| 2022-03-08 00:00 | Fix committed into node-ipc package                                                                                                                                              |
+| 2022-03-18 08:37 | Emil notified by social media                                                                                                                                                    |
+| 2022-03-18 08:39 | Emil notified team via slack                                                                                                                                                     |
+| 2022-03-18 08:59 | Audun looked for the packages in the known repositories, both Github and Azure Dev-Ops                                                                                           |
+| 2022-03-18 09:00 | Audun found four effected repositories, two in Azure Dev-Ops, Two in Github                                                                                                      |
+| 2022-03-18 09:15 | John evaluated two repositories in Azure Dev-Ops and found one to be production code (MVS UI) with unaffected version and one to be unused code (tech-challenge)                 |
+| 2022-03-18 09:20 | John removed "tech-challenge" project as it was a POC                                                                                                                            |
+| 2022-03-18 09:25 | Freight team was notified and educated of the issue                                                                                                                              |
+| 2022-03-18 10:07 | Audun evaluated two repositories in Github found both repositories able to be archived due to one being sample code (Crossplane-Sandbox) and one not being used (Cost-janitor)   |
+| 2022-03-18 10:40 | Ross was assigned for the investigation                                                                                                                                          |
 | 2022-03-18 11:20 | Ross made commit to fix the version on unaffected update before package became malicious "f346f834cb453f1c415f7f74bfe7e08e890b26f3" also added context to the commit description |
 
 ## Contributing Factors

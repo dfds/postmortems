@@ -9,19 +9,19 @@ on both nodes.
 
 All times in UTC.
 
-| Time             | Event                   |
-| :--------------- | ----------------------- |
-| 2022-02-08 12:05 | **Detection:** Prometheus fails to start after upgrade. |
-| 2022-02-08 12:08 | Developer reports that Prometheus is down. |
-| 2022-02-08 12:15 | We discover Prometheus' PVC is taken by other pod |
-| 2022-02-08 12:15 | We discovered two nodes were in NotReady state |
+| Time             | Event                                                                                   |
+| :--------------- | --------------------------------------------------------------------------------------- |
+| 2022-02-08 12:05 | **Detection:** Prometheus fails to start after upgrade.                                 |
+| 2022-02-08 12:08 | Developer reports that Prometheus is down.                                              |
+| 2022-02-08 12:15 | We discover Prometheus' PVC is taken by other pod                                       |
+| 2022-02-08 12:15 | We discovered two nodes were in NotReady state                                          |
 | 2022-02-08 12:16 | Describing the nodes did not reveal why they were NotReady. CPU and Memory looked fine. |
-| 2022-02-08 12:17 | We attempted to uncordon the nodes. |
-| 2022-02-08 12:17 | One node didn't even try to uncordon. |
-| 2022-02-08 12:18 | The other node said it was currently uncordoning, but nothing happened |
-| 2022-02-08 12:22 | We used AWS CLI to mark the nodes as unhealthy. |
-| 2022-02-08 12:25 | Two new EC2 instances were spawned, and the two unhealthy ones were terminated. |
-| 2022-02-08 12:25 | Incident raised for the issue |
+| 2022-02-08 12:17 | We attempted to uncordon the nodes.                                                     |
+| 2022-02-08 12:17 | One node didn't even try to uncordon.                                                   |
+| 2022-02-08 12:18 | The other node said it was currently uncordoning, but nothing happened                  |
+| 2022-02-08 12:22 | We used AWS CLI to mark the nodes as unhealthy.                                         |
+| 2022-02-08 12:25 | Two new EC2 instances were spawned, and the two unhealthy ones were terminated.         |
+| 2022-02-08 12:25 | Incident raised for the issue                                                           |
 | 2022-02-08 12:48 | **Recovery:** We were able to start Prometheus because the the PVC was available again. |
 
 ## Contributing Factors

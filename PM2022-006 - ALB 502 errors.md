@@ -8,18 +8,18 @@ A team reports small amount of randomly distributed HTTP 502 errors showing up i
 
 All times in UTC.
 
-| Time             | Event                   |
-| :--------------- | ----------------------- |
-| 2020-12-21 HH:mm | Created bulk-apply-limitrange.sh to set limitranges on most namespaces. Afterwards run manually on demand. |
-| 2021-09-10 HH:mm | Traefik v2 went live in its own namespace |
-| 2021/22-??-?? HH:mm | bulk-apply-limitrange.sh was run manually without excluding the traefik namespace |
-| 2022-05-?? HH:mm | Detected on unknown date in May |
-| 2022-05-25 HH:mm | CE started investigating it much deeper than previously |
-| 2022-06-02 HH:mm | CE discovered that the traefik pods were out of memory (OOM) killed |
-| 2022-06-02 HH:mm | We found out that the traefik namespace had limitranges applied |
-| 2022-06-02 HH:mm | The limitrange in the traefik namespace was deleted |
-| 2022-06-07 08:30 | Exclude Traefik namespace from limitranges in bulk-apply-limitrange.sh script|
-| 2022-06-10 HH:mm |  By looking at the logs, we confirmed that the problem was solved.|
+| Time                | Event                                                                                                      |
+| :------------------ | ---------------------------------------------------------------------------------------------------------- |
+| 2020-12-21 HH:mm    | Created bulk-apply-limitrange.sh to set limitranges on most namespaces. Afterwards run manually on demand. |
+| 2021-09-10 HH:mm    | Traefik v2 went live in its own namespace                                                                  |
+| 2021/22-??-?? HH:mm | bulk-apply-limitrange.sh was run manually without excluding the traefik namespace                          |
+| 2022-05-?? HH:mm    | Detected on unknown date in May                                                                            |
+| 2022-05-25 HH:mm    | CE started investigating it much deeper than previously                                                    |
+| 2022-06-02 HH:mm    | CE discovered that the traefik pods were out of memory (OOM) killed                                        |
+| 2022-06-02 HH:mm    | We found out that the traefik namespace had limitranges applied                                            |
+| 2022-06-02 HH:mm    | The limitrange in the traefik namespace was deleted                                                        |
+| 2022-06-07 08:30    | Exclude Traefik namespace from limitranges in bulk-apply-limitrange.sh script                              |
+| 2022-06-10 HH:mm    | By looking at the logs, we confirmed that the problem was solved.                                          |
 
 ## Contributing Factors
 
