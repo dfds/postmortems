@@ -10,13 +10,13 @@ All times in UTC.
 
 | Time                   | Event                                                                                                         |
 | :--------------------- | ------------------------------------------------------------------------------------------------------------- |
-| 2022-08-04 11:38       | Alerted by end-user team that they were having issues applying a Service resource to the affected K8s cluster |
-| 2022-08-04 11:50       | Started looking into the alerted issue                                                                        |
-| 2022-08-04 12:08       | Issue identified, started work on fix                                                                         |
-| 2022-08-04 12:18       | Issue recreated in K8s sandbox                                                                                |
-| 2022-08-04 12:26-12:?? | Fix deployed in K8s sandbox                                                                                   |
-| 2022-08-04 13:06       | Fix deployed in affected production cluster, awaiting user feedback                                           |
-| 2022-08-04 13:25       | User reporting back that the fix works                                                                        |
+| 2022-08-03 11:38       | Alerted by end-user team that they were having issues applying a Service resource to the affected K8s cluster |
+| 2022-08-03 11:50       | Started looking into the alerted issue                                                                        |
+| 2022-08-03 12:08       | Issue identified, started work on fix                                                                         |
+| 2022-08-03 12:18       | Issue recreated in K8s sandbox                                                                                |
+| 2022-08-03 12:26-12:?? | Fix deployed in K8s sandbox                                                                                   |
+| 2022-08-03 13:06       | Fix deployed in affected production cluster, awaiting user feedback                                           |
+| 2022-08-03 13:25       | User reporting back that the fix works                                                                        |
 
 ## Contributing Factors
 
