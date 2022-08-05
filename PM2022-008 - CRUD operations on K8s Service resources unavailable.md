@@ -21,22 +21,32 @@ All times in UTC.
 ## Contributing Factors
 
 - Kyverno not being kept up-to-date due to code freeze
+- Issue with certificate chain expiry in third party application through no action of our own
+- Signs of Kyverno not being a mature project
 - If the Kyverno ClusterPolicy's 'failurePolicy' was set to 'ignore' instead of the default 'fail', the issue wouldn't have occurred
+- Issue raised but not on the 'ops day to day' board
+- Product put into production prematurely without monitoring
+- Not enough communication and coordination before product put into production
 
 ## Action Items
 
-- Monitoring on Kyverno
-- Internal documentation on our Kyverno setup
+- Implement monitoring on Kyverno
+- Create internal documentation on our Kyverno setup
+- Investigate the exact issue with certificate in the application
+- Consider if we should change the failurePolicy on ClusterPolicy resources going forward
 
 ## Lessons Learned
 
-- Consider if we should change the failurePolicy on ClusterPolicy resources going forward
+- Ensure operational issues are initially added to the 'Ops Day to Day' board
 
 ## Attendees
 
 - RF
 - EC
-- 
+- SD
+- JW
+- MM
+- MH
 
 ## Stats
 
