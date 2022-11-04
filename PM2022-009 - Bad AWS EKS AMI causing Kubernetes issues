@@ -1,0 +1,81 @@
+# Bad AWS EKS AMI 
+
+## Summary
+
+On Monday our daily-rollover process spawned new nodes based on the latest AWS EKS-node AMI which was later recalled due to a Kernel 
+issue. This bad node image caused sporadic communication issues in our cluster, notably nodes briefly reportng "PLEG is not healthy" and 
+occasionally reporting as unhealthy. One team also reported network timeout issues from their deployed pods communicating with other services.
+
+The issue was resolved by rolling the EC2 AutoScaling group launch configuration's AMI image to the previous known good version.
+
+## Timeline
+
+All times in UTC.
+
+| Time             | Event                   |
+| :--------------- | ----------------------- |
+| 2022-10-29 01:02 | AMI v20221027 released |
+| 2022-10-31 07:30 | Daily roll-over of nodes picks up new latest AMI image and replaces existing nodes with new nodes based on AMI v20221027 |
+| 2022-10-31 13:45 | A planned upgrade of the vpc-cni eks-addon is triggered via deployment pipeline |
+| 2022-10-31 14:10 | Pipeline reports failure as it times out performing the upgrade. We observe only ~10 of 45 aws-node pods have successfully upgraded, 5 are stuck in terminating and the remaining 30 have not been attempted  |
+| 2022-10-31 14:30 | We observe some nodes reporting NodeNotReady for ~30 seconds at a time before reporting NodeReady again, reporting "KubeletNotReady PLEG is not healthy". Assumed this was in some way related to the in-progress upgrade of vpc-cni/eks-nodes |
+| 2022-10-31 14:50 | Some pods eventually make progress and successfully upgrade their eks-node but eventually become stuck again |
+| 2022-10-31 15:15 | We attempted to force delete a terminating pod and observed that it created a new one but it did not become Ready |
+| 2022-10-31 15:45 | Begin manual intervention to cordon, drain and delete remaining "stuck in eks-node terminating" nodes one at a time to complete vpc-cni upgrade |
+| 2022-10-31 16:45 | Logs investigated on nodes for clues but nothing obvious found. No logs were available from the Kubernetes API for some containers but the aws-node containers were running and logging on the node itself. Logs downloaded from node for future reference |
+| 2022-10-31 17:21 | An issue is found on GitHub re: AMI v202201027 PLEG which leads us to find that v202201027 has been recalled due to a Kernel issue. |
+| 2022-10-31 17:35 | All aws-node pods upgraded and in running state, 15 nodes had to be drained and deleted in total. |
+| 2022-10-31 17:45 | NodeNotReady events still occuring but no loss of service has been detected or reported and otherwise the cluster has been operational. Decision made to re-assess tomorrow |
+| 2022-11-01 09:30 | No signs of service interruption so decision made to monitor for the day with a view to wait for a new AMI release while bearing in mind we may need to roll-back the AMI if any issues become apparent |
+| 2022-11-01 11:12 | Observed that the number of sockets used per node is continuously increasing |
+| 2022-11-02 08:56 | Issue raised to modify our infrastructure-modules terraform to allow setting of a specific AMI as it is hardcoded to use latest |
+| 2022-11-02 10:52 | A team reports they are having connectivity issues from some of their pods but do not provide any further information for us to investigate the specifics |
+| 2022-11-02 11:56 | Decision made to roll back AMI due to increasing socket issues and Kubernetes events reporting communication problems |
+| 2022-11-02 13:14 | Work on terraform complete and tested, merged into master branch |
+| 2022-11-02 13:46 | Pipeline ran and nodes rolled back to previous AMI |
+| 2022-11-02 14:40 | After observation we decided that the AMI rollback had resolved the issue |
+
+## Contributing Factors
+
+- Difficulty getting a response from the team that did report an issue about specifics
+- No on-call escalation paths with individual teams
+- Some deployed team applications not using readiness/liveness probes
+- Manifested during an IT conference where most of the development teams, and members from our own team, were in attendance
+- Our infrastructure-modules were hard-coded to use the "latest" AMI as soon as it is available as part of daily roll-over with no function to pin a specific AMI
+- EKS component upgraded the same day as a new node AMI was used confused matters
+- Alerting not catching NodeNotReady/Sockets
+- Lack of deeper understanding of Kubernetes components in the team
+
+## Action Items
+
+- Improve coverage of readiness/liveness probes
+    - Reach out to teams with suggestions about readiness/liveness probes
+    - Create dashboard  for readiness/liveness probe coverage
+    - Create wiki article covering readiness/liveness probes and their usefulness
+- Modify infrastructure-modules to allow specifying a particular AMI
+- Schedule a discussion about whether we should immediately receive "latest" AMI and how we would go about testing new AMI's before they are deployed
+- Implement alerting to catch abnormal NodeNotReady events and/or increased sockets used
+- Create a learning path for Kubernetes within the team
+- Collect logs from nodes centrally
+- Create a Prometheus exporter that retrieves the latest AMI available and create associated dashboard/alerts
+
+## Lessons Learned
+
+- If a new AMI has been deployed, be very cautious about upgrading components on the same day
+- We need better communication paths with teams for incidents/issues
+
+## Attendees
+
+- RF
+- ED
+- EC
+- SC
+- JB
+- JA
+- JS
+
+## Stats
+
+- Category: Kubernetes
+- Time to detection: 7 hours
+- Time to recovery: 54 hours 10 minutes
