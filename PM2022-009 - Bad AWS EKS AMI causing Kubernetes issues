@@ -40,7 +40,7 @@ All times in UTC.
 - Difficulty getting a response from the team that did report an issue about specifics
 - No on-call escalation paths with individual teams
 - Some deployed team applications not using readiness/liveness probes
-- Happened during an IT conference where most of the development teams were away
+- Manifested during an IT conference where most of the development teams, and members from our own team, were in attendance
 - Our infrastructure-modules were hard-coded to use the "latest" AMI as soon as it is available as part of daily roll-over with no function to pin a specific AMI
 - EKS component upgraded the same day as a new node AMI was used confused matters
 - Alerting not catching NodeNotReady/Sockets
