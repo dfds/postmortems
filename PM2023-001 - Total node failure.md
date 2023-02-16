@@ -2,12 +2,11 @@
 
 ## Summary
 
-During an unscheduled node rollover the Kubernetes cluster was suddenly left without any worker nodes. Multiple node rollover attempts later, the cluster was back in a working state with the expected amount of worker nodes.
+Due to Kubernetes logs not being shipped to CloudWatch, an unscheduled node rollover was triggered to remedy that. The node rollover attempt timed out(faulty configuration), and a subsequent rollover attempt to fix that killed the healthy worker nodes because of two reasons. The faulty nodes weren't removed yet and the default termination policy is to remove nodes with the oldest launch template at the time. This meant that the cluster was left without any nodes. Multiple node rollover attempts later, the cluster was back in a working state with the expected amount of worker nodes.
 
 ## Timeline
 
 All times in UTC.
-
 
 | Time             | Event                                                                                                                                                                                                                                                                                                          |
 | :--------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
