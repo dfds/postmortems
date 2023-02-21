@@ -44,7 +44,7 @@ All times in UTC.
 - Add coverage for fluentd to QA test suite. Ensure that logs from A to Z is covered
 - Add alarms for fluentd in case not enough/no log data is being sent
 - Implement staging environment
-
+- Implement guards against invalid container runtime selection (done)
 ## Lessons Learned
 
 - In case the situation turns critical, remain calm and collected. It's better not to rush a fix and potentially make the damage worse
