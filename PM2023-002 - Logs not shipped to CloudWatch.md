@@ -11,7 +11,7 @@ All times in UTC.
 
 | Time             | Event                                                                                                                                |
 | :--------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| 2023-04-11 11:20 | Fluentd was upgraded to latest version                                                                                               |
+| 2023-04-11 11:20 | Fluentd was upgraded to latest version during normal maintenance operations                                                          |
 | 2023-04-11 11:20 | First node stops shipping logs to CloudWatch                                                                                         |
 | 2023-04-11 17:15 | Second node stops shipping logs to CloudWatch                                                                                        |
 | 2023-04-11 17:25 | Third node stops shipping logs to CloudWatch                                                                                         |
