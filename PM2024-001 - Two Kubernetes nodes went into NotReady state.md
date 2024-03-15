@@ -51,7 +51,7 @@ All times in UTC.
 
 - Move 'grafana-agent' to monitoring node group
 - Add alerts for when bandwidth across the cluster reaches a certain threshold
-- Investigate if we can set limits memory limits on grafana-agent Helm chart
+- Investigate if we can set memory limits on grafana-agent Helm chart
 - Investigate grafana-agent memory usage
 - Ask Grafana support if we should use PVC for grafana-agent
 - Consider pushing node logs to Loki with limited retention
