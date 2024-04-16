@@ -23,7 +23,7 @@ All times in UTC.
 ## Contributing Factors
 
 - Prod deployments are configured with only 1 ReplicaSet, which is not ideal
-- It appeared that Amazon ECR rate limit kicked in even if this shouldn't had happened, however we'll looking into it whether it's not a Kubernetes limit.
+- It appeared that Amazon ECR rate limit kicked in even if this shouldn't had happened, however we'll be looking into it whether it's not a Kubernetes limit.
 
 ## Action Items
 - We tweaked/adjusted the internal Registry pull limit/Quota (QPS) on Kubernetes level
