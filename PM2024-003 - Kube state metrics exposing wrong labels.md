@@ -18,7 +18,7 @@ All times in UTC.
 | 2024-06-06 14:20 | Unstable changes attempted to be rolled back but it was not possible to get them rolled back with confidence so a change
 | 2024-06-06 16:07 | Incident is created to notify users on the impact and steps to minimize the noise generated alerts triggered by missing labels on the metrics along with expectation to when solution is rolled out.
 | 2024-06-07 08:33 | All components were back operation and no major issues were identified. Teams were notified on #dev-peer-support
-| 2024-06-06 09:41 | We've been notified that some metrics no longer are displayed in their Grafana Dashboards as a result of the migration.
+| 2024-06-07 09:41 | We've been notified that some metrics no longer are displayed in their Grafana Dashboards as a result of the migration.
 
 ## Contributing Factors
 
