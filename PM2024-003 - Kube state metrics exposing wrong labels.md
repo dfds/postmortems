@@ -12,7 +12,6 @@ All times in UTC.
 
 | Time             | Event                                                                                                                        |
 | :--------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 2024-06-06 HH:mm | Short event description.
 | 2024-06-06 11:27 | User reported wrong labels on kube-state metrics
 | 2024-06-06 12:41 | Issue root cause identified and a fix has been planned
 | 2024-06-06 14:10 | Fix has been attempted to be rolled out in production but has been blocked by other changes introduced in the terraform modules that was not was not stable enough to work in production
