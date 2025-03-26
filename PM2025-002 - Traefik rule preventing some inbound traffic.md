@@ -21,7 +21,7 @@ All times in UTC.
 | 2025-03-18 00:26 | Pipeline triggered for rollback |
 | 2025-03-18 00:39 | Pipeline run completed |
 | 2025-03-18 00:41 | Confirmed expected behaviour appeared resumed. Reached out to customer to confirm resolution |
-| 2025-03-18 00:42 | Customer confirmed issue resolved |
+| 2025-03-17 00:42 | Customer confirmed issue resolved |
 
 ## Contributing Factors
 
